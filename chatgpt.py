@@ -1,5 +1,5 @@
 def manipulate_input(input1, input2):
-    return "Your name is: " + input1 + " " + input2
+    return "Your name is: " + input1 + " " + input2 + " Welcome "
 
 '''import openai
 # Set the API key
@@ -10,3 +10,4 @@ prompt = "Hello, how are you today?"
 completion = openai.Completion.create(engine=model_engine, prompt=prompt, max_tokens=1024, n=1,stop=None,temperature=0.7)
 message = completion.choices[0].text
 print(message)'''
+"test"

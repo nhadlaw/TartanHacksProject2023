@@ -1,0 +1,24 @@
+{
+  "name": "Your AI Email Assistant",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Tell an AI what email you want to write!",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "48": "48.png"
+  }
+}
